@@ -20,7 +20,7 @@ public class VoitureController {
     @Autowired
     private VoitureRepository voitureRepository;
 
-
+    @CrossOrigin
     @GetMapping("/list")
     @CrossOrigin(origins = "*")
     public List<Voiture> list(){

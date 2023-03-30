@@ -36,6 +36,8 @@ public class VoitureServiceImplement implements VoitureService{
             e.setName(voiture.getName());
             e.setColor(voiture.getColor());
             e.setPrice(voiture.getPrice());
+            e.setCategorie(voiture.getCategorie());
+            e.setImage(voiture.getImage());
             return voitureRepository.save(e);
             }).orElseThrow(()-> new RuntimeException("Car not found."));
     }
