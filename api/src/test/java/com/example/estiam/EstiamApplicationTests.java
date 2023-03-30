@@ -1,10 +1,10 @@
-package com.example.cookiecar;
+package com.example.estiam;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CookiecarApplicationTests {
+class EstiamApplicationTests {
 
     @Test
     void contextLoads() {

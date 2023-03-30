@@ -1,13 +1,13 @@
-package com.example.cookiecar;
+package com.example.estiam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CookiecarApplication {
+public class EstiamApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CookiecarApplication.class, args);
+        SpringApplication.run(EstiamApplication.class, args);
     }
 
 }
