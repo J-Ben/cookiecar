@@ -35,6 +35,7 @@ public class PassagerServiceImplement implements PassagerService{
     public Passager update(Long id, Passager passager) {
         return passagerRepository.findById(id).map((e)->{
             e.setNom(passager.getNom());
+            e.setImage(passager.getImage());
             return passagerRepository.save(e);
         }).orElseThrow(()-> new RuntimeException("Car not found."));
     }

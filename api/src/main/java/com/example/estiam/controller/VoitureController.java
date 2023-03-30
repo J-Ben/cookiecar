@@ -20,6 +20,7 @@ public class VoitureController {
     @Autowired
     private VoitureRepository voitureRepository;
 
+    @CrossOrigin
     @GetMapping("/list")
     public List<Voiture> list(){
         return voitureService.list();
