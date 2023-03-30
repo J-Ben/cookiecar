@@ -22,7 +22,6 @@ public class VoitureController {
 
     @CrossOrigin
     @GetMapping("/list")
-    @CrossOrigin(origins = "*")
     public List<Voiture> list(){
         return voitureService.list();
     }
