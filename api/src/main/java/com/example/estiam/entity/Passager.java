@@ -17,4 +17,6 @@ public class Passager {
     private String nom;
     @ManyToOne
     private Voiture voiture;
+
+    public Passager(String nom) { this.nom = nom; }
 }

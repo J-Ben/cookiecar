@@ -1,5 +1,6 @@
 package com.example.estiam.service;
 
+import com.example.estiam.entity.Passager;
 import com.example.estiam.entity.Voiture;
 import com.example.estiam.repository.VoitureRepository;
 import lombok.AllArgsConstructor;
@@ -38,4 +39,6 @@ public class VoitureServiceImplement implements VoitureService{
             return voitureRepository.save(e);
             }).orElseThrow(()-> new RuntimeException("Car not found."));
     }
+
+
 }
